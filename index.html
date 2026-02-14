@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WONDELauncher - Лучший лаунчер для майнкрафт</title>
+  <meta name="description" content="WONDELauncher - красивый и быстрый Minecraft лаунчер с модами, кастомными версиями, Smart Repair и безопасной сборкой." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+  <div class="sky-noise" aria-hidden="true"></div>
+  <div class="cloud cloud-a" aria-hidden="true"></div>
+  <div class="cloud cloud-b" aria-hidden="true"></div>
+  <div class="cloud cloud-c" aria-hidden="true"></div>
+  <div class="horizon" aria-hidden="true"></div>
+  <div id="scrollLine" class="scroll-line" aria-hidden="true"></div>
+
+  <header id="siteHeader" class="topbar">
+    <a class="brand" href="#top" aria-label="WONDELauncher">
+      <span class="brand-mark">WL</span>
+      <span class="brand-text">WONDELauncher</span>
+    </a>
+    <nav class="menu">
+      <a href="#features">Почему WL</a>
+      <a href="#experience">Интерактив</a>
+      <a href="#download">Скачать</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="top-actions">
+      <button id="themeToggleBtn" class="btn btn-ghost btn-small" type="button">Тема: Sky</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="kicker">NEXT GEN MINECRAFT LAUNCHER</p>
+        <h1>Лучший лаунчер для майнкрафт</h1>
+        <p class="subtitle">
+          Быстрый старт, кастомные версии, удобные моды и Smart Repair. Одна программа для всего.
+        </p>
+        <div class="hero-actions">
+          <a id="downloadBtn" class="btn btn-main" href="./downloads/WONDELauncher.exe" download>
+            Скачать WONDELauncher.exe
+          </a>
+          <a class="btn btn-ghost" href="#experience">Посмотреть интерактив</a>
+        </div>
+        <p id="downloadStatus" class="download-note">Проверка файла...</p>
+      </div>
+
+      <aside class="hero-card reveal" id="heroCard">
+        <h2>Релиз 2.3.0</h2>
+        <div class="release-row">
+          <span>Платформа</span>
+          <strong>Windows x64</strong>
+        </div>
+        <div class="release-row">
+          <span>Файл</span>
+          <strong id="exeSize">WONDELauncher.exe</strong>
+        </div>
+        <div class="release-row">
+          <span>Статус</span>
+          <strong class="status-ok">Stable</strong>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong data-count="100">0</strong>
+            <span>UI готов</span>
+          </div>
+          <div class="stat">
+            <strong data-count="5">0</strong>
+            <span>Загрузчиков</span>
+          </div>
+          <div class="stat">
+            <strong data-count="1">0</strong>
+            <span>Клик до старта</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head reveal">
+        <h2>Почему WONDELauncher?</h2>
+        <p>Выбери категорию и посмотри ключевые преимущества.</p>
+      </div>
+
+      <div class="feature-controls reveal">
+        <button class="chip is-active" type="button" data-filter="all">Все</button>
+        <button class="chip" type="button" data-filter="safety">Безопасность</button>
+        <button class="chip" type="button" data-filter="performance">Скорость</button>
+        <button class="chip" type="button" data-filter="mods">Моды</button>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature reveal" data-tags="performance core">
+          <h3>Smart Repair</h3>
+          <p>Перед запуском лаунчер проверяет runtime и автоматически докачивает недостающие файлы.</p>
+        </article>
+        <article class="feature reveal" data-tags="safety core">
+          <h3>Без вирусов</h3>
+          <p>Чистая сборка без скрытых майнеров и рекламных инжектов, в отличие от сомнительных сборок из случайных источников.</p>
+        </article>
+        <article class="feature reveal" data-tags="mods">
+          <h3>Умная установка модов</h3>
+          <p>Моды ставятся в выбранную целевую версию с автоподбором совместимого файла.</p>
+        </article>
+        <article class="feature reveal" data-tags="performance">
+          <h3>Быстрый запуск</h3>
+          <p>Изолированные профили и кэш сокращают время повторного старта.</p>
+        </article>
+        <article class="feature reveal" data-tags="mods">
+          <h3>Кастомные версии</h3>
+          <p>Каждая версия хранится отдельно: свои моды, конфиги, ресурсы и миры.</p>
+        </article>
+        <article class="feature reveal" data-tags="safety performance">
+          <h3>Прозрачная структура данных</h3>
+          <p>Все файлы лежат в понятных папках, логи доступны сразу из интерфейса.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <h2>Интерактивный блок</h2>
+        <p>Живой демо-переключатель, как это работает в лаунчере.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="demo-panel reveal">
+          <div class="demo-tabs">
+            <button class="demo-tab is-active" type="button" data-demo="repair">Smart Repair</button>
+            <button class="demo-tab" type="button" data-demo="mods">Mods Flow</button>
+            <button class="demo-tab" type="button" data-demo="profiles">Profiles</button>
+          </div>
+          <div class="demo-screens">
+            <div class="demo-screen is-active" data-demo-screen="repair">
+              <h3>Авторемонт при запуске</h3>
+              <p>Лаунчер проверяет manifests и libraries, затем дозагружает только отсутствующее.</p>
+              <div class="mini-log mono">
+                <span>[REPAIR] Runtime check failed</span>
+                <span>[REPAIR] Restoring vanilla base...</span>
+                <span>[REPAIR] Restoring loader runtime...</span>
+                <span>[REPAIR] Completed.</span>
+              </div>
+            </div>
+            <div class="demo-screen" data-demo-screen="mods">
+              <h3>Установка модов по цели</h3>
+              <p>Выбираешь target version, лаунчер ставит правильный файл под нужный loader/core.</p>
+              <div class="mini-log mono">
+                <span>[MODS] Target: 1.16.5-forge</span>
+                <span>[MODS] Matching latest compatible file...</span>
+                <span>[MODS] Installed to mods/</span>
+              </div>
+            </div>
+            <div class="demo-screen" data-demo-screen="profiles">
+              <h3>Профили-никнеймы</h3>
+              <p>Версия выбирается отдельно, профиль хранит только identity и быстрый launch workflow.</p>
+              <div class="mini-log mono">
+                <span>[PROFILE] Active: MipaMauSTUDIO1</span>
+                <span>[PROFILE] Version source: custom metadata</span>
+                <span>[LAUNCH] Command prepared</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist reveal">
+          <h3>Мини-чеклист перед стартом</h3>
+          <label><input type="checkbox" checked disabled /> Версия выбрана</label>
+          <label><input type="checkbox" checked disabled /> Loader проверен</label>
+          <label><input type="checkbox" checked disabled /> Java найдена</label>
+          <label><input type="checkbox" checked disabled /> Runtime целостный</label>
+          <button id="randomTipBtn" class="btn btn-main btn-small" type="button">Случайный совет</button>
+          <p id="tipOutput" class="tip-output">Совет: держи включенной автонастройку экрана для стабильного первого запуска.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps">
+      <div class="section-head reveal">
+        <h2>Старт за 4 шага</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step reveal">
+          <span>1</span>
+          <h3>Скачай .exe</h3>
+          <p>Одна кнопка, один файл.</p>
+        </div>
+        <div class="step reveal">
+          <span>2</span>
+          <h3>Создай профиль</h3>
+          <p>Никнейм + версия.</p>
+        </div>
+        <div class="step reveal">
+          <span>3</span>
+          <h3>Добавь моды</h3>
+          <p>Через встроенную страницу модов.</p>
+        </div>
+        <div class="step reveal">
+          <span>4</span>
+          <h3>Играй</h3>
+          <p>Если что-то не так, Smart Repair исправит.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section download reveal">
+      <div class="download-card">
+        <h2>Скачать WONDELauncher</h2>
+        <p>Актуальная сборка для Windows.</p>
+        <a id="downloadBtnBottom" class="btn btn-main btn-large" href="./downloads/WONDELauncher.exe" download>
+          Скачать сейчас
+        </a>
+        <small id="checksumText">Один файл: просто скачайте и запустите WONDELauncher.exe</small>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-head reveal">
+        <h2>FAQ</h2>
+        <p>Быстрые ответы по запуску и установке.</p>
+      </div>
+      <div class="faq-tools reveal">
+        <input id="faqSearchInput" class="faq-search" type="text" placeholder="Найти вопрос..." />
+      </div>
+      <div id="faqList" class="faq reveal">
+        <details>
+          <summary>Почему игра может выйти с code 1?</summary>
+          <p>Обычно это Java/моды/неполные файлы профиля. Smart Repair чинит runtime автоматически.</p>
+        </details>
+        <details>
+          <summary>Где хранятся кастомные версии?</summary>
+          <p>В папке <code>AppData\Roaming\.wondelauncher\versions</code>.</p>
+        </details>
+        <details>
+          <summary>Можно ли использовать видео как фон?</summary>
+          <p>Да. Поддерживаются MP4/WEBM, и видео повторяется циклически.</p>
+        </details>
+        <details>
+          <summary>Есть оффлайн режим?</summary>
+          <p>Да, а для онлайн-режима доступен вход Microsoft.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <button id="toTopBtn" class="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> WONDELauncher. Built for Minecraft players.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
